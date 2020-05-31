@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- My Css -->
+    <link rel="stylesheet" type="text/css" href="./index.css">
+
+    <title>Margatsni Presentation</title>
+</head>
+<body>
+
+    <button onclick="myPlayFunction()">Play</button>
+<button onclick="myPauseFunction()">Pause</button>
+
+    <div class="cubeContainer">
+
+        
+
+        <div class="cube" id="cube">
+
+            <div class="slide slide1">
+                <img src="./photos/girl1.jpg">
+            </div>
+
+            <div class="slide slide2">
+                <img src="./photos/man1.jpg">
+            </div>
+
+            <div class="slide slide3">
+                <img src="./photos/girl2.jpg">
+            </div>
+
+            <div class="slide slide4">
+                <img src="./photos/man2.jpg">
+            </div>
+
+            <div class="slide slide5">
+                <img src="./photos/girl3.jpg">
+            </div>
+
+            <div class="slide slide6">
+                <img src="./photos/man3.jpg">
+            </div>
+
+        </div>
+
+    </div>
+
+    
+    
+
+    <script>
+        function myPlayFunction() {
+    document.getElementById("cube").style.animationPlayState = "running";
+  }
+  
+  function myPauseFunction() {
+    document.getElementById("cube").style.animationPlayState = "paused";
+  }
+    </script>
+</body>
+</html>

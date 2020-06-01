@@ -4,10 +4,10 @@ body {
 }
 
 .cubeContainer {
-    margin-top: 14.5%;
+    margin-top: 10.5%;
     perspective: 1000px;
     perspective-origin: 50% 50%;
-    transform: scale(3);
+    transform: scale(2.8);
 }
 
 .cube {
@@ -17,12 +17,14 @@ body {
     height: 200px;
     margin: auto;
     position: relative;
-    animation: loop 10s linear infinite;
+    animation: loop 15s linear infinite;
     animation-play-state: paused;
 }
 
 .slide {
     position: absolute;
+    width: 200px;
+    height: 200px;
 }
 
 .slide img {
@@ -32,26 +34,39 @@ body {
 
 .slide:nth-child(1) {
     transform: translateZ(100px);
+    background: url(./photos/m.jpg);
+    background-size: cover;
 }
 
 .slide:nth-child(2) {
     transform: rotateY(90deg) translateZ(100px);
+    background: url(./photos/qmark.jpg);
+    background-size: cover;
 }
 
 .slide:nth-child(3) {
     transform: rotateY(90deg) rotateX(90deg) translateZ(100px);
+    background: url(./photos/tech.jpg);
+    background-size: cover;
+    color: white;
 }
 
 .slide:nth-child(4) {
     transform: rotateY(180deg) rotateZ(90deg) translateZ(100px);
+    background: url(./photos/roadblock.jpg);
+    background-size: cover;
 }
 
 .slide:nth-child(5) {
     transform: rotateY(-90deg) rotateZ(90deg) translateZ(100px);
+    background: url(./photos/m.jpg);
+    background-size: cover;
 }
 
 .slide:nth-child(6) {
     transform: rotateX(-90deg) translateZ(100px);
+    background: url(./photos/process.jpg);
+    background-size: cover;
 }
 
 @keyframes loop {
@@ -68,4 +83,24 @@ body {
     } 83% {
         transform: rotateX(90deg);
     }
+}
+
+.slide2 h4 {
+    margin-top: -0.7%;
+}
+
+.slide3 h4 {
+    margin-top: -2%;
+}
+
+.slide3 h5 {
+    margin-bottom: -1%;
+}
+
+.slide3 ul {
+    margin-left: -3%;
+}
+
+.slide6 h4 {
+    margin-top: -0.7%;
 }

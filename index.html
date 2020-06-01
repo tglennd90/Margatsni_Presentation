@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <script src="https://kit.fontawesome.com/0570c2f73b.js" crossorigin="anonymous"></script>
+
     <!-- My Css -->
     <link rel="stylesheet" type="text/css" href="./index.css">
 
@@ -11,8 +13,8 @@
 </head>
 <body>
 
-    <button onclick="myPlayFunction()">Play</button>
-<button onclick="myPauseFunction()">Pause</button>
+    <a onclick="myPlayFunction()"><i class="far fa-play-circle fa-5x"></i></a>
+    <a onclick="myPauseFunction()"><i class="far fa-pause-circle fa-5x"></i></a>
 
     <div class="cubeContainer">
 
@@ -21,27 +23,38 @@
         <div class="cube" id="cube">
 
             <div class="slide slide1">
-                <img src="./photos/girl1.jpg">
+                <h2>Margatsni!</h2>
             </div>
 
             <div class="slide slide2">
-                <img src="./photos/man1.jpg">
+                <h4>What is Margatsni?</h4>
             </div>
 
             <div class="slide slide3">
-                <img src="./photos/girl2.jpg">
+                <h5>Technologies</h5>
+                <h4>Used</h4>
+                <ul>
+                    <li>MERN App (Mongo Atlas)</li>
+                    <li>Bootstrap / Materialize</li>
+                    <li>jsonwebtoken</li>
+                    <li>bcrypt</li>
+                </ul>
             </div>
 
             <div class="slide slide4">
-                <img src="./photos/man2.jpg">
+                <h4>Road-Blocks</h4>
+                <br>
+                <ul>
+                    <li>Un-Follow still follows</li>
+                    <li>Deleting a comment</li>
+                </ul>
             </div>
 
             <div class="slide slide5">
-                <img src="./photos/girl3.jpg">
             </div>
 
             <div class="slide slide6">
-                <img src="./photos/man3.jpg">
+                <h4>Development Process</h4>
             </div>
 
         </div>
